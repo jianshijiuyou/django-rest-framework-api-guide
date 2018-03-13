@@ -9,6 +9,8 @@
 
 本人能力有限，不足之处还有很多，欢迎大家 PR。
 
+转载请注明出处。
+
 # 目录
 - [请求](api-guide/requests.md)  
 - [响应](api-guide/responses.md)  
@@ -19,4 +21,5 @@
 - [解析](api-guide/parsers.md)  
 - [渲染](api-guide/renderers.md)  
 - [序列化](api-guide/serializers.md)  
+- [序列化·字段](api-guide/fields.md)  
 
