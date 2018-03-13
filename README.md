@@ -2,9 +2,8 @@
 
 ![](http://www.django-rest-framework.org/img/logo.png)
 
-[Django REST framework 官方网站](http://www.django-rest-framework.org/)  
 
-文章翻译自官网，部分内容有增删，能力有限，欢迎大家 PR。
+文章翻译自[官方网站](http://www.django-rest-framework.org/)，部分内容有增删，能力有限，欢迎大家 PR。
 
 # 目录
 - [请求](api-guide/requests.md)  
