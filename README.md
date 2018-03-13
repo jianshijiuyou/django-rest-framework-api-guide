@@ -3,7 +3,11 @@
 ![](http://www.django-rest-framework.org/img/logo.png)
 
 
-文章翻译自[官方网站](http://www.django-rest-framework.org/)，部分内容有增删，能力有限，欢迎大家 PR。
+文章翻译自[官方网站](http://www.django-rest-framework.org/)，部分内容有增删。
+
+没看过官网 tutorial 的建议先看一遍，也有人翻译过： [Django Rest Framework 中文版教程](https://www.gitbook.com/book/whatwewant/django-rest-framework-tutorial-cn/details) ，少了最后一篇，不过影响不大。
+
+本人能力有限，不足之处还有很多，欢迎大家 PR。
 
 # 目录
 - [请求](api-guide/requests.md)  
