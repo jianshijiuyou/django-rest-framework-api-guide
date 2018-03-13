@@ -2,7 +2,7 @@
 
 
 
-> 如果你正在开发基于 REST 的 web API 服务...... 应该忽略 request.POST。 
+> 如果你正在开发基于 REST 的 web API 服务...... 应该忽略 request.POST。  
 > — *Malcom Tredinnick，Django 开发组*
 
 REST framework 的 `Request` 类扩展与标准的 `HttpRequest`，并做了相应的增强，比如更加灵活的请求解析（request parsing）和认证（request authentication）。
