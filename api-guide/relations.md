@@ -68,7 +68,7 @@ class AlbumSerializer(serializers.ModelSerializer):
 
 将序列化为以下形式。
 
-``` json
+```
 {
     'album_name': 'Things We Lost In The Fire',
     'artist': 'Low',
@@ -104,7 +104,7 @@ class AlbumSerializer(serializers.ModelSerializer):
 
 将序列化为这样的表示：
 
-``` json
+```
 {
     'album_name': 'Undun',
     'artist': 'The Roots',
@@ -148,7 +148,7 @@ class AlbumSerializer(serializers.ModelSerializer):
 
 将序列化为这样的表示：
 
-``` json
+```
 {
     'album_name': 'Graceland',
     'artist': 'Paul Simon',
