@@ -25,3 +25,4 @@
 - [序列化·关系](api-guide/relations.md)  
 - [验证器](api-guide/validators.md)  
 - [认证](api-guide/authentication.md)  
+- [权限](api-guide/permissions.md)  
