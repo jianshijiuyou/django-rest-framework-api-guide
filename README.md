@@ -26,3 +26,4 @@
 - [验证器](api-guide/validators.md)  
 - [认证](api-guide/authentication.md)  
 - [权限](api-guide/permissions.md)  
+- [限流](api-guide/throttling.md)  
