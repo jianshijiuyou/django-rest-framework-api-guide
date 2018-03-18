@@ -27,3 +27,4 @@
 - [认证](api-guide/authentication.md)  
 - [权限](api-guide/permissions.md)  
 - [限流](api-guide/throttling.md)  
+- [过滤](api-guide/filtering.md)  
