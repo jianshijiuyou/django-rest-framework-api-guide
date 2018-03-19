@@ -1,6 +1,4 @@
 > [官方原文链接](http://www.django-rest-framework.org/api-guide/filtering/)  
-> [本系列文章 github 地址](https://github.com/jianshijiuyou/django-rest-framework-api-guide/)   
-> [转载请注明出处](https://juejin.im/post/5aacc21f6fb9a028d4445a4a)  
 
 
 # 过滤
