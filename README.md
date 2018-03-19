@@ -31,3 +31,4 @@
 - [分页](api-guide/pagination.md)  
 - [版本控制](api-guide/versioning.md)  
 - [内容协商](api-guide/content-negotiation.md)  
+- [元数据](api-guide/metadata.md)  
