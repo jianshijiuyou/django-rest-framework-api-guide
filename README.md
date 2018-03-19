@@ -30,3 +30,4 @@
 - [过滤](api-guide/filtering.md)  
 - [分页](api-guide/pagination.md)  
 - [版本控制](api-guide/versioning.md)  
+- [内容协商](api-guide/content-negotiation.md)  
