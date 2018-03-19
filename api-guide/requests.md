@@ -2,7 +2,7 @@
 
 
 
-> 如果你正在开发基于 REST 的 web API 服务...... 应该忽略 request.POST。  
+> 如果你正在开发基于 REST 的 web API 服务...... 应该忽略 request.POST。 
 > — *Malcom Tredinnick，Django 开发组*
 
 REST framework 的 `Request` 类扩展与标准的 `HttpRequest`，并做了相应的增强，比如更加灵活的请求解析（request parsing）和认证（request authentication）。
@@ -42,17 +42,17 @@ REST framwork 的 `Request` 对象提供了灵活的请求解析，允许你使�
 > 如果客户端发送的请求内容无法解析（不同于格式错误），则会引发 `UnsupportedMediaType` 异常，默认情况下会被捕获并返回 `415 Unsupported Media Type` 响应。
 
 
-## 处理请求时...
+## 内容协商
 
-在处理请求时可以查看一些属性，比如渲染器（renderer），媒体类型（media type）。这样可以针对不同的情况作出最合适的处理方式。
+该请求公开了一些属性，允许你确定内容协商阶段的结果。这使你可以实施一些行为，例如为不同媒体类型选择不同的序列化方案。
 
 ### .accepted_renderer
 
-查看当前请求使用的是什么渲染器（renderer）。
+渲染器实例是由内容协商阶段选择的。
 
 ### .accepted_media_type
 
-查看 media type 。
+表示内容协商阶段接受的 media type 的字符串。
 
 ## 认证（Authentication）
 

@@ -7,7 +7,7 @@ REST framework  提供了一个 `APIView` 类，它继承于 Django 的 `View` �
 `APIView` 类与不同的 `View` 类有所不同：  
 
 * 传递给处理方法的 request 对象是 REST framework 的 `Request` 实例，而不是 Django 的 `HttpRequest` 实例。
-* 处理方法可能返回 REST framework 的 `Response`，而不是 Django 的 `HttpResponse` 。该视图将管理内容的处理，并在响应中设置正确的渲染器。
+* 处理方法可能返回 REST framework 的 `Response`，而不是 Django 的 `HttpResponse` 。该视图将管理内容协商，并在响应中设置正确的渲染器。
 * 任何 `APIException` 异常都会被捕获并进行适当的响应。
 * 传入的请求会进行认证，在请求分派给处理方法之前将进行适当的权限检查（允许或限制）。
 
@@ -97,7 +97,7 @@ class ListUsers(APIView):
 
 **.initial(self, request, \*args, \*\*kwargs)**
 
-用于执行**处理方法被调用**之前需要的任何操作。强制执行一些权限验证和限制操作。
+用于执行处理方法被调用之前需要的任何操作。此方法用于强制执行权限和限流，并执行内容协商。
 
 **.handle_exception(self, exc)**
 
@@ -116,7 +116,7 @@ class ListUsers(APIView):
 
 **.finalize_response(self, request, response, \*args, \*\*kwargs)**
 
-确保从处理方法返回的任何 `Response` 对象将被呈现为正确的内容类型，这由内容协商（content negotiation）确定。
+确保从处理方法返回的任何 `Response` 对象将被呈现为正确的内容类型，这由内容协商确定。
 
 通常不需要重写此方法。
 
