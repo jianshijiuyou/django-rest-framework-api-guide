@@ -100,7 +100,7 @@ class ExampleView(APIVIew):
 
 ---
 
-# API Reference
+# API 参考
 
 ## AcceptHeaderVersioning
 
