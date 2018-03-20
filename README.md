@@ -35,4 +35,5 @@
 - [Schemas](api-guide/schemas.md)  
 - [Format 后缀](api-guide/format-suffixes.md)  
 - [返回 URL](api-guide/reverse.md)  
+- [异常](api-guide/exceptions.md)  
 - [状态码](api-guide/status-codes.md)  
