@@ -12,7 +12,7 @@
 转载请注明出处。
 
 # 目录
-- [请求](http://http://drf.jiuyou.info/#/api-guide/requests)  
+- [请求](http://drf.jiuyou.info/#/api-guide/requests)  
 - [响应](http://drf.jiuyou.info/#/api-guide/responses)  
 - [视图](http://drf.jiuyou.info/#/api-guide/views)  
 - [通用视图](http://drf.jiuyou.info/#/api-guide/genericviews)  
