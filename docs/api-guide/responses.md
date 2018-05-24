@@ -7,7 +7,7 @@
 
 REST framework 通过提供一个 `Response` 类来支持 HTTP 内容协商，该类允许你根据客户端请求返回不同的表现形式（如： JSON ，HTML 等）。
 
-`Response` 类的子类是 Django 的 `SimpleTemplateResponse`。`Response` 对象使用数据进行初始化，数据应由 Python 对象（native Python primitives）组成。然后 REST framework 使用标准的 HTTP 内容协商来确定它应该如何渲染最终响应的内容。
+`Response` 是 Django 的 `SimpleTemplateResponse` 的子类。`Response` 对象使用数据进行初始化，数据应由 Python 对象（native Python primitives）组成。然后 REST framework 使用标准的 HTTP 内容协商来确定它应该如何渲染最终响应的内容。
 
 
 当然，您也可以不使用 `Response` 类，直接返回常规 `HttpResponse` 或 `StreamingHttpResponse` 对象。 使用 `Response` 类只是提供了一个更好的交互方式，它可以返回多种格式。
