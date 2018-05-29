@@ -10,7 +10,7 @@
 本人能力有限，不足之处还有很多，欢迎大家 PR。
 
 
-# DRF API 指南
+# DRF API 指南(基于版本 3.7.x)
   - [请求](http://drf.jiuyou.info/#/drf/requests.md)  
   - [响应](http://drf.jiuyou.info/#/drf/responses.md)  
   - [视图](http://drf.jiuyou.info/#/drf/views.md)  
@@ -44,7 +44,7 @@
 
 添加部分 Django [官方文档](https://docs.djangoproject.com/en/2.0/)翻译总结
 
-# Django 文档
+# Django 文档(基于版本 2.0)
   - [Django 基础命令](http://drf.jiuyou.info/#/django/django命令.md)
   - [Django 模型·字段类型](http://drf.jiuyou.info/#/django/django模型字段类型.md)
   - [Django 模型·Meta 选项](http://drf.jiuyou.info/#/django/djangoMeta选项.md)
