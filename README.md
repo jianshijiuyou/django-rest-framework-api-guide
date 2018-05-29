@@ -39,7 +39,7 @@
   - [测试](http://drf.jiuyou.info/#/drf/testing.md)  
   - [Settings](http://drf.jiuyou.info/#/drf/settings.md)  
 
-###########################################
+###########################################  
 2018.5.29 update
 
 添加部分 Django [官方文档](https://docs.djangoproject.com/en/2.0/)翻译总结
