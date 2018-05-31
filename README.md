@@ -53,6 +53,8 @@
   - [Django 模型实例参考](http://drf.jiuyou.info/#/django/django模型实例参考.md)
   - [Django URL 配置](http://drf.jiuyou.info/#/django/djangourlconf.md)
   - [Django 文件上传与管理](http://drf.jiuyou.info/#/django/djangofileuploads.md)
+  - [Django 认证](http://drf.jiuyou.info/#/django/django认证.md)
+  - [Django 信号](http://drf.jiuyou.info/#/django/djangosignals.md)
 
 
 # 最后的最后

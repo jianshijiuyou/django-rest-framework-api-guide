@@ -35,3 +35,5 @@
   * [Django 模型实例参考](django/django模型实例参考.md)
   * [Django URL 配置](django/djangourlconf.md)
   * [Django 文件上传与管理](django/djangofileuploads.md)
+  * [Django 认证](django/django认证.md)
+  * [Django 信号](django/djangosignals.md)

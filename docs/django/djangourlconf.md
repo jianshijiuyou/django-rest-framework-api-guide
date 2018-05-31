@@ -479,6 +479,8 @@ urlpatterns = [
 
 ## 静态资源配置
 
+### 用户上传的文件
+
 可以像下面这样
 
 ``` python
@@ -514,3 +516,67 @@ MEDIA_URL = '/media/'
 
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 ```
+
+### Web 静态资源
+
+图片，JavaScript，CSS 等
+
+1. 确保 `django.contrib.staticfiles` 包含在你的 `INSTALLED_APPS`。
+
+2. 在您的 settings.py 文件中，定义 `STATIC_URL`，例如：
+
+    ``` python
+    STATIC_URL = '/static/'
+    ```
+
+3. 在您的模板中，使用 `static` 模板标签，使用配置的 `STATICFILES_STORAGE` 为给定的相对路径构建 URL。
+
+    ``` html
+    {% load static %}
+    <img src="{% static "my_app/example.jpg" %}" alt="My image"/>
+    ```
+
+4. 将您的静态文件存储在应用程序中名为 `static` 的文件夹中。例如
+    `my_app/static/my_app/example.jpg`
+
+您的项目可能还会有不与特定应用绑定的静态资产。除了在应用程序中使用 `static/` 目录之外，您还可以在 setting 文件中定义一个目录列表（`STATICFILES_DIRS`），Django 也将查找其中的静态文件。例如：
+
+``` python
+STATICFILES_DIRS = [
+    os.path.join(BASE_DIR, "static"),
+    '/var/www/static/',
+]
+```
+
+#### 在开发过程中提供静态文件
+
+例如，如果您的 `STATIC_URL` 定义为 `/static/`，则可以通过将以下代码段添加到您的 `urls.py` 中来完成此操作：
+
+``` python
+from django.conf import settings
+from django.conf.urls.static import static
+
+urlpatterns = [
+    # ... the rest of your URLconf goes here ...
+] + static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
+```
+
+#### 部署静态文件
+
+`django.contrib.staticfiles` 提供了一个便捷的管理命令，用于在单个目录中收集静态文件，以便您可以轻松地为其提供服务。
+
+1. 将 `STATIC_ROOT` setting 设置为您想要从中提供这些文件的目录，例如：
+
+    ``` python
+    STATIC_ROOT = "/var/www/example.com/static/"
+    ```
+
+2. 运行 `collectstatic` 管理命令：
+
+    ```
+    $ python manage.py collectstatic
+    ```
+
+    这会将静态文件夹中的所有文件复制到 `STATIC_ROOT` 目录中。
+
+3. 使用您选择的 Web 服务器来提供静态文件访问，如 Nginx。
