@@ -73,7 +73,7 @@ def example_view(request, format=None):
 
 如果你需要严格标识唯一的客户端 IP 地址，则需要先通过设置 `NUM_PROXIES` setting 来配置 API 运行的应用代理的数量。该设置应该是一个零或更大的整数。如果设置为非零，则一旦任何应用程序代理 IP 地址首先被排除，客户端 IP 将被标识为 `X-Forwarded-For` header 中的最后一个 IP 地址。如果设置为零，则 `REMOTE_ADDR` 值将始终用作识别 IP 地址。
 
-重要的是要理解，如果你配置了 `num_proxy` 设置，那么在一个唯一的 NAT 的网关后面的所有客户端将被当作一个单独的客户机来对待。
+重要的是要理解，如果你配置了 `NUM_PROXIES` 设置，那么在一个唯一的 NAT 的网关后面的所有客户端将被当作一个单独的客户机来对待。
 
 关于 `X-Forwarded-For` header 如何工作以及识别远程客户端 IP 的更多内容可以在[这里找到](http://oxpedia.org/wiki/index.php?title=AppSuite:Grizzly#Multiple_Proxies_in_front_of_the_cluster)。
 
